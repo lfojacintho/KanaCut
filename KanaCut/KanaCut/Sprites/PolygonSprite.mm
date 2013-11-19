@@ -45,7 +45,7 @@
         CGPoint p = ccp (shape->GetVertex (i).x * PTM_RATIO, shape->GetVertex (i).y * PTM_RATIO);
         [points addObject: [NSValue valueWithCGPoint: p]];
     }
-    
+     
     self = [super initWithPoints: points andTexture: texture];
     
     if (self)
@@ -56,6 +56,12 @@
         _centroid = self.body->GetLocalCenter ();
         self.anchorPoint = ccp (_centroid.x * PTM_RATIO / texture.contentSize.width,
                                 _centroid.y * PTM_RATIO / texture.contentSize.height);
+        
+        _sliceEntered = NO;
+        _sliceExited = NO;
+        _entryPoint.SetZero ();
+        _exitPoint.SetZero ();
+        _sliceEntryTime = 0;
     }
     
     return self;

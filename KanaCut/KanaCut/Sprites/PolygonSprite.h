@@ -18,6 +18,12 @@
 @property (nonatomic, readwrite) BOOL original;
 @property (nonatomic, readwrite) b2Vec2 centroid;
 
+@property (nonatomic, readwrite) BOOL sliceEntered;
+@property (nonatomic, readwrite) BOOL sliceExited;
+@property (nonatomic, readwrite) b2Vec2 entryPoint;
+@property (nonatomic, readwrite) b2Vec2 exitPoint;
+@property (nonatomic, readwrite) double sliceEntryTime;
+
 - (id) initWithTexture: (CCTexture2D *) texture body: (b2Body *) body original: (BOOL) original;
 - (id) initWithFile: (NSString *) filename body: (b2Body *) body original: (BOOL) original;
 + (id) spriteWithFile: (NSString *) filename body: (b2Body *) body original: (BOOL) original;

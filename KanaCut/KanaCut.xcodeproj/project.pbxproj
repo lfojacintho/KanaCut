@@ -184,14 +184,30 @@
 		AB2C1CF4183A80E80053113A /* b2Rope.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB2C1CF3183A80E80053113A /* b2Rope.cpp */; };
 		AB2C1CFA183A80E80053113A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2C1CF9183A80E80053113A /* main.m */; };
 		AB2C1CFD183A80E80053113A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB2C1CFC183A80E80053113A /* AppDelegate.mm */; };
-		AB2C1D00183A80E80053113A /* HelloWorldLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB2C1CFF183A80E80053113A /* HelloWorldLayer.mm */; };
-		AB2C1D03183A80E80053113A /* IntroLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB2C1D02183A80E80053113A /* IntroLayer.mm */; };
-		AB2C1D06183A80E80053113A /* GLES-Render.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB2C1D05183A80E80053113A /* GLES-Render.mm */; };
 		AB2C1D08183A80E80053113A /* blocks.png in Resources */ = {isa = PBXBuildFile; fileRef = AB2C1D07183A80E80053113A /* blocks.png */; };
 		AB2C1D16183A8B540053113A /* PRFilledPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2C1D10183A8B540053113A /* PRFilledPolygon.m */; };
 		AB2C1D17183A8B540053113A /* PRRatcliffTriangulator.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB2C1D12183A8B540053113A /* PRRatcliffTriangulator.mm */; };
 		AB2C1D18183A8B540053113A /* triangulate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB2C1D14183A8B540053113A /* triangulate.cpp */; };
 		AB2C1D1E183A95F80053113A /* PolygonSprite.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB2C1D1D183A95F80053113A /* PolygonSprite.mm */; };
+		ABDA4E34183BA7A900C4EBAD /* HiraganaA.mm in Sources */ = {isa = PBXBuildFile; fileRef = ABDA4E33183BA7A900C4EBAD /* HiraganaA.mm */; };
+		ABDA4E47183BDDAD00C4EBAD /* hiragana-a-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDA4E38183BDDAD00C4EBAD /* hiragana-a-ipadhd.png */; };
+		ABDA4E48183BDDAD00C4EBAD /* hiragana-a-iphonehd.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDA4E39183BDDAD00C4EBAD /* hiragana-a-iphonehd.png */; };
+		ABDA4E49183BDDAD00C4EBAD /* hiragana-a.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDA4E3A183BDDAD00C4EBAD /* hiragana-a.png */; };
+		ABDA4E4A183BDDAD00C4EBAD /* hiragana-e-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDA4E3B183BDDAD00C4EBAD /* hiragana-e-ipadhd.png */; };
+		ABDA4E4B183BDDAD00C4EBAD /* hiragana-e-iphonehd.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDA4E3C183BDDAD00C4EBAD /* hiragana-e-iphonehd.png */; };
+		ABDA4E4C183BDDAD00C4EBAD /* hiragana-e.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDA4E3D183BDDAD00C4EBAD /* hiragana-e.png */; };
+		ABDA4E4D183BDDAD00C4EBAD /* hiragana-i-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDA4E3E183BDDAD00C4EBAD /* hiragana-i-ipadhd.png */; };
+		ABDA4E4E183BDDAD00C4EBAD /* hiragana-i-iphonehd.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDA4E3F183BDDAD00C4EBAD /* hiragana-i-iphonehd.png */; };
+		ABDA4E4F183BDDAD00C4EBAD /* hiragana-i.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDA4E40183BDDAD00C4EBAD /* hiragana-i.png */; };
+		ABDA4E50183BDDAD00C4EBAD /* hiragana-o-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDA4E41183BDDAD00C4EBAD /* hiragana-o-ipadhd.png */; };
+		ABDA4E51183BDDAD00C4EBAD /* hiragana-o-iphonehd.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDA4E42183BDDAD00C4EBAD /* hiragana-o-iphonehd.png */; };
+		ABDA4E52183BDDAD00C4EBAD /* hiragana-o.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDA4E43183BDDAD00C4EBAD /* hiragana-o.png */; };
+		ABDA4E53183BDDAD00C4EBAD /* hiragana-u-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDA4E44183BDDAD00C4EBAD /* hiragana-u-ipadhd.png */; };
+		ABDA4E54183BDDAD00C4EBAD /* hiragana-u-iphonehd.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDA4E45183BDDAD00C4EBAD /* hiragana-u-iphonehd.png */; };
+		ABDA4E55183BDDAD00C4EBAD /* hiragana-u.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDA4E46183BDDAD00C4EBAD /* hiragana-u.png */; };
+		ABDA4E5B183BEA8A00C4EBAD /* GLES-Render.mm in Sources */ = {isa = PBXBuildFile; fileRef = ABDA4E59183BEA8A00C4EBAD /* GLES-Render.mm */; };
+		ABDA4E60183BEAA400C4EBAD /* HelloWorldLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = ABDA4E5D183BEAA400C4EBAD /* HelloWorldLayer.mm */; };
+		ABDA4E61183BEAA400C4EBAD /* IntroLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = ABDA4E5F183BEAA400C4EBAD /* IntroLayer.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -566,12 +582,6 @@
 		AB2C1CF9183A80E80053113A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AB2C1CFB183A80E80053113A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AB2C1CFC183A80E80053113A /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
-		AB2C1CFE183A80E80053113A /* HelloWorldLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldLayer.h; path = ../HelloWorldLayer.h; sourceTree = "<group>"; };
-		AB2C1CFF183A80E80053113A /* HelloWorldLayer.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = HelloWorldLayer.mm; path = ../HelloWorldLayer.mm; sourceTree = "<group>"; };
-		AB2C1D01183A80E80053113A /* IntroLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IntroLayer.h; path = ../IntroLayer.h; sourceTree = "<group>"; };
-		AB2C1D02183A80E80053113A /* IntroLayer.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = IntroLayer.mm; path = ../IntroLayer.mm; sourceTree = "<group>"; };
-		AB2C1D04183A80E80053113A /* GLES-Render.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GLES-Render.h"; sourceTree = "<group>"; };
-		AB2C1D05183A80E80053113A /* GLES-Render.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "GLES-Render.mm"; sourceTree = "<group>"; };
 		AB2C1D07183A80E80053113A /* blocks.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blocks.png; path = Resources/blocks.png; sourceTree = "<group>"; };
 		AB2C1D0F183A8B540053113A /* PRFilledPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRFilledPolygon.h; sourceTree = "<group>"; };
 		AB2C1D10183A8B540053113A /* PRFilledPolygon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRFilledPolygon.m; sourceTree = "<group>"; };
@@ -582,6 +592,30 @@
 		AB2C1D15183A8B540053113A /* triangulate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = triangulate.h; sourceTree = "<group>"; };
 		AB2C1D1C183A95F80053113A /* PolygonSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolygonSprite.h; sourceTree = "<group>"; };
 		AB2C1D1D183A95F80053113A /* PolygonSprite.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PolygonSprite.mm; sourceTree = "<group>"; };
+		ABDA4E32183BA7A900C4EBAD /* HiraganaA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HiraganaA.h; sourceTree = "<group>"; };
+		ABDA4E33183BA7A900C4EBAD /* HiraganaA.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HiraganaA.mm; sourceTree = "<group>"; };
+		ABDA4E38183BDDAD00C4EBAD /* hiragana-a-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hiragana-a-ipadhd.png"; sourceTree = "<group>"; };
+		ABDA4E39183BDDAD00C4EBAD /* hiragana-a-iphonehd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hiragana-a-iphonehd.png"; sourceTree = "<group>"; };
+		ABDA4E3A183BDDAD00C4EBAD /* hiragana-a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hiragana-a.png"; sourceTree = "<group>"; };
+		ABDA4E3B183BDDAD00C4EBAD /* hiragana-e-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hiragana-e-ipadhd.png"; sourceTree = "<group>"; };
+		ABDA4E3C183BDDAD00C4EBAD /* hiragana-e-iphonehd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hiragana-e-iphonehd.png"; sourceTree = "<group>"; };
+		ABDA4E3D183BDDAD00C4EBAD /* hiragana-e.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hiragana-e.png"; sourceTree = "<group>"; };
+		ABDA4E3E183BDDAD00C4EBAD /* hiragana-i-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hiragana-i-ipadhd.png"; sourceTree = "<group>"; };
+		ABDA4E3F183BDDAD00C4EBAD /* hiragana-i-iphonehd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hiragana-i-iphonehd.png"; sourceTree = "<group>"; };
+		ABDA4E40183BDDAD00C4EBAD /* hiragana-i.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hiragana-i.png"; sourceTree = "<group>"; };
+		ABDA4E41183BDDAD00C4EBAD /* hiragana-o-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hiragana-o-ipadhd.png"; sourceTree = "<group>"; };
+		ABDA4E42183BDDAD00C4EBAD /* hiragana-o-iphonehd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hiragana-o-iphonehd.png"; sourceTree = "<group>"; };
+		ABDA4E43183BDDAD00C4EBAD /* hiragana-o.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hiragana-o.png"; sourceTree = "<group>"; };
+		ABDA4E44183BDDAD00C4EBAD /* hiragana-u-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hiragana-u-ipadhd.png"; sourceTree = "<group>"; };
+		ABDA4E45183BDDAD00C4EBAD /* hiragana-u-iphonehd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hiragana-u-iphonehd.png"; sourceTree = "<group>"; };
+		ABDA4E46183BDDAD00C4EBAD /* hiragana-u.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hiragana-u.png"; sourceTree = "<group>"; };
+		ABDA4E58183BEA8A00C4EBAD /* GLES-Render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLES-Render.h"; sourceTree = "<group>"; };
+		ABDA4E59183BEA8A00C4EBAD /* GLES-Render.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "GLES-Render.mm"; sourceTree = "<group>"; };
+		ABDA4E5A183BEA8A00C4EBAD /* RayCastCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RayCastCallback.h; sourceTree = "<group>"; };
+		ABDA4E5C183BEAA400C4EBAD /* HelloWorldLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldLayer.h; sourceTree = "<group>"; };
+		ABDA4E5D183BEAA400C4EBAD /* HelloWorldLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HelloWorldLayer.mm; sourceTree = "<group>"; };
+		ABDA4E5E183BEAA400C4EBAD /* IntroLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroLayer.h; sourceTree = "<group>"; };
+		ABDA4E5F183BEAA400C4EBAD /* IntroLayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IntroLayer.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -644,10 +678,9 @@
 			children = (
 				AB2C1D1B183A95900053113A /* Layers */,
 				AB2C1D19183A95410053113A /* Sprites */,
+				ABDA4E56183BEA0C00C4EBAD /* Utils */,
 				AB2C1CFB183A80E80053113A /* AppDelegate.h */,
 				AB2C1CFC183A80E80053113A /* AppDelegate.mm */,
-				AB2C1D04183A80E80053113A /* GLES-Render.h */,
-				AB2C1D05183A80E80053113A /* GLES-Render.mm */,
 				AB2C1AD8183A80E40053113A /* Resources */,
 				AB2C1AF0183A80E40053113A /* libs */,
 				AB2C1CF7183A80E80053113A /* Supporting Files */,
@@ -658,6 +691,7 @@
 		AB2C1AD8183A80E40053113A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				ABDA4E37183BDDAD00C4EBAD /* Sprites */,
 				AB2C1AD9183A80E40053113A /* Default.png */,
 				AB2C1ADB183A80E40053113A /* Default@2x.png */,
 				AB2C1ADD183A80E40053113A /* Default-568h@2x.png */,
@@ -1216,6 +1250,8 @@
 			children = (
 				AB2C1D1C183A95F80053113A /* PolygonSprite.h */,
 				AB2C1D1D183A95F80053113A /* PolygonSprite.mm */,
+				ABDA4E32183BA7A900C4EBAD /* HiraganaA.h */,
+				ABDA4E33183BA7A900C4EBAD /* HiraganaA.mm */,
 			);
 			path = Sprites;
 			sourceTree = "<group>";
@@ -1223,12 +1259,45 @@
 		AB2C1D1B183A95900053113A /* Layers */ = {
 			isa = PBXGroup;
 			children = (
-				AB2C1CFE183A80E80053113A /* HelloWorldLayer.h */,
-				AB2C1CFF183A80E80053113A /* HelloWorldLayer.mm */,
-				AB2C1D01183A80E80053113A /* IntroLayer.h */,
-				AB2C1D02183A80E80053113A /* IntroLayer.mm */,
+				ABDA4E5C183BEAA400C4EBAD /* HelloWorldLayer.h */,
+				ABDA4E5D183BEAA400C4EBAD /* HelloWorldLayer.mm */,
+				ABDA4E5E183BEAA400C4EBAD /* IntroLayer.h */,
+				ABDA4E5F183BEAA400C4EBAD /* IntroLayer.mm */,
 			);
 			path = Layers;
+			sourceTree = "<group>";
+		};
+		ABDA4E37183BDDAD00C4EBAD /* Sprites */ = {
+			isa = PBXGroup;
+			children = (
+				ABDA4E38183BDDAD00C4EBAD /* hiragana-a-ipadhd.png */,
+				ABDA4E39183BDDAD00C4EBAD /* hiragana-a-iphonehd.png */,
+				ABDA4E3A183BDDAD00C4EBAD /* hiragana-a.png */,
+				ABDA4E3B183BDDAD00C4EBAD /* hiragana-e-ipadhd.png */,
+				ABDA4E3C183BDDAD00C4EBAD /* hiragana-e-iphonehd.png */,
+				ABDA4E3D183BDDAD00C4EBAD /* hiragana-e.png */,
+				ABDA4E3E183BDDAD00C4EBAD /* hiragana-i-ipadhd.png */,
+				ABDA4E3F183BDDAD00C4EBAD /* hiragana-i-iphonehd.png */,
+				ABDA4E40183BDDAD00C4EBAD /* hiragana-i.png */,
+				ABDA4E41183BDDAD00C4EBAD /* hiragana-o-ipadhd.png */,
+				ABDA4E42183BDDAD00C4EBAD /* hiragana-o-iphonehd.png */,
+				ABDA4E43183BDDAD00C4EBAD /* hiragana-o.png */,
+				ABDA4E44183BDDAD00C4EBAD /* hiragana-u-ipadhd.png */,
+				ABDA4E45183BDDAD00C4EBAD /* hiragana-u-iphonehd.png */,
+				ABDA4E46183BDDAD00C4EBAD /* hiragana-u.png */,
+			);
+			name = Sprites;
+			path = Resources/Sprites;
+			sourceTree = "<group>";
+		};
+		ABDA4E56183BEA0C00C4EBAD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				ABDA4E58183BEA8A00C4EBAD /* GLES-Render.h */,
+				ABDA4E59183BEA8A00C4EBAD /* GLES-Render.mm */,
+				ABDA4E5A183BEA8A00C4EBAD /* RayCastCallback.h */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1282,16 +1351,31 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABDA4E47183BDDAD00C4EBAD /* hiragana-a-ipadhd.png in Resources */,
 				AB2C1AEA183A80E40053113A /* Icon.png in Resources */,
+				ABDA4E4C183BDDAD00C4EBAD /* hiragana-e.png in Resources */,
 				AB2C1C48183A80E70053113A /* ChangeLog in Resources */,
+				ABDA4E53183BDDAD00C4EBAD /* hiragana-u-ipadhd.png in Resources */,
 				AB2C1ADC183A80E40053113A /* Default@2x.png in Resources */,
 				AB2C1AE6183A80E40053113A /* Icon-Small.png in Resources */,
 				AB2C1AE2183A80E40053113A /* Icon-72.png in Resources */,
+				ABDA4E4E183BDDAD00C4EBAD /* hiragana-i-iphonehd.png in Resources */,
 				AB2C1ADA183A80E40053113A /* Default.png in Resources */,
+				ABDA4E54183BDDAD00C4EBAD /* hiragana-u-iphonehd.png in Resources */,
 				AB2C1AE4183A80E40053113A /* Icon-Small-50.png in Resources */,
+				ABDA4E4F183BDDAD00C4EBAD /* hiragana-i.png in Resources */,
 				AB2C1AEF183A80E40053113A /* iTunesArtwork in Resources */,
+				ABDA4E48183BDDAD00C4EBAD /* hiragana-a-iphonehd.png in Resources */,
+				ABDA4E52183BDDAD00C4EBAD /* hiragana-o.png in Resources */,
+				ABDA4E51183BDDAD00C4EBAD /* hiragana-o-iphonehd.png in Resources */,
+				ABDA4E49183BDDAD00C4EBAD /* hiragana-a.png in Resources */,
+				ABDA4E55183BDDAD00C4EBAD /* hiragana-u.png in Resources */,
+				ABDA4E50183BDDAD00C4EBAD /* hiragana-o-ipadhd.png in Resources */,
+				ABDA4E4A183BDDAD00C4EBAD /* hiragana-e-ipadhd.png in Resources */,
 				AB2C1D08183A80E80053113A /* blocks.png in Resources */,
+				ABDA4E4B183BDDAD00C4EBAD /* hiragana-e-iphonehd.png in Resources */,
 				AB2C1AE8183A80E40053113A /* Icon-Small@2x.png in Resources */,
+				ABDA4E4D183BDDAD00C4EBAD /* hiragana-i-ipadhd.png in Resources */,
 				AB2C1AE0183A80E40053113A /* Default-Landscape~ipad.png in Resources */,
 				AB2C1ADE183A80E40053113A /* Default-568h@2x.png in Resources */,
 				AB2C1AEC183A80E40053113A /* Icon@2x.png in Resources */,
@@ -1316,6 +1400,7 @@
 				AB2C1C52183A80E70053113A /* mat4.c in Sources */,
 				AB2C1B2E183A80E50053113A /* ccDeprecated.m in Sources */,
 				AB2C1CE7183A80E80053113A /* b2RevoluteJoint.cpp in Sources */,
+				ABDA4E34183BA7A900C4EBAD /* HiraganaA.mm in Sources */,
 				AB2C1BE9183A80E60053113A /* CCDirectorMac.m in Sources */,
 				AB2C1B43183A80E50053113A /* ccGLStateCache.m in Sources */,
 				AB2C1C15183A80E60053113A /* TransformUtils.m in Sources */,
@@ -1333,7 +1418,6 @@
 				AB2C1CD8183A80E70053113A /* b2GearJoint.cpp in Sources */,
 				AB2C1BFC183A80E60053113A /* ccCArray.m in Sources */,
 				AB2C1C26183A80E70053113A /* CDXMacOSXSupport.m in Sources */,
-				AB2C1D06183A80E80053113A /* GLES-Render.mm in Sources */,
 				AB2C1C1A183A80E60053113A /* ZipUtils.m in Sources */,
 				AB2C1B0C183A80E40053113A /* CCActionManager.m in Sources */,
 				AB2C1B74183A80E50053113A /* CCParticleSystemQuad.m in Sources */,
@@ -1349,10 +1433,12 @@
 				AB2C1C79183A80E70053113A /* b2DynamicTree.cpp in Sources */,
 				AB2C1CA5183A80E70053113A /* b2ContactManager.cpp in Sources */,
 				AB2C1B6E183A80E50053113A /* CCParticleExamples.m in Sources */,
+				ABDA4E61183BEAA400C4EBAD /* IntroLayer.mm in Sources */,
 				AB2C1B6B183A80E50053113A /* CCParticleBatchNode.m in Sources */,
 				AB2C1C86183A80E70053113A /* b2EdgeShape.cpp in Sources */,
 				AB2C1CAB183A80E70053113A /* b2Island.cpp in Sources */,
 				AB2C1BAE183A80E60053113A /* CCTextureAtlas.m in Sources */,
+				ABDA4E5B183BEA8A00C4EBAD /* GLES-Render.mm in Sources */,
 				AB2C1C5C183A80E70053113A /* utility.c in Sources */,
 				AB2C1C08183A80E60053113A /* CCVertex.m in Sources */,
 				AB2C1C0E183A80E60053113A /* NSThread+performBlock.m in Sources */,
@@ -1403,7 +1489,6 @@
 				AB2C1BDE183A80E60053113A /* CCGLView.m in Sources */,
 				AB2C1C0B183A80E60053113A /* CGPointExtension.m in Sources */,
 				AB2C1B0F183A80E40053113A /* CCActionPageTurn3D.m in Sources */,
-				AB2C1D00183A80E80053113A /* HelloWorldLayer.mm in Sources */,
 				AB2C1C60183A80E70053113A /* vec3.c in Sources */,
 				AB2C1C12183A80E60053113A /* TGAlib.m in Sources */,
 				AB2C1B1B183A80E40053113A /* CCAnimation.m in Sources */,
@@ -1418,6 +1503,7 @@
 				AB2C1C73183A80E70053113A /* b2Collision.cpp in Sources */,
 				AB2C1BCC183A80E60053113A /* CCTransitionProgress.m in Sources */,
 				AB2C1BEF183A80E60053113A /* CCGLView.m in Sources */,
+				ABDA4E60183BEAA400C4EBAD /* HelloWorldLayer.mm in Sources */,
 				AB2C1C23183A80E70053113A /* CDOpenALSupport.m in Sources */,
 				AB2C1C76183A80E70053113A /* b2Distance.cpp in Sources */,
 				AB2C1B06183A80E40053113A /* CCActionInstant.m in Sources */,
@@ -1441,7 +1527,6 @@
 				AB2C1B34183A80E50053113A /* CCDrawingPrimitives.m in Sources */,
 				AB2C1B9C183A80E60053113A /* ccShaders.m in Sources */,
 				AB2C1D1E183A95F80053113A /* PolygonSprite.mm in Sources */,
-				AB2C1D03183A80E80053113A /* IntroLayer.mm in Sources */,
 				AB2C1CB2183A80E70053113A /* b2WorldCallbacks.cpp in Sources */,
 				AB2C1CD2183A80E70053113A /* b2DistanceJoint.cpp in Sources */,
 				AB2C1BF2183A80E60053113A /* CCWindow.m in Sources */,
@@ -1584,6 +1669,7 @@
 				AB2C1D0D183A80E80053113A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
