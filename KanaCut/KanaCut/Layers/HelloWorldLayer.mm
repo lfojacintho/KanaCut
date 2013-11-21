@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "HelloWorldLayer.h"
 #import "RayCastCallback.h"
+#import "CCBlade.h"
 
 #import "PolygonSprite.h"
 #import "HiraganaA.h"
@@ -27,9 +28,13 @@ enum {
     CGPoint _endPoint;
     
     RayCastCallback *_raycastCallback;
+    
+    CCBlade *_blade;
+    float _deltaRemainder;
 }
 
 @property (nonatomic, strong) CCArray *cache;
+@property (nonatomic, strong) CCArray *blades;
 
 -(void) initPhysics;
 -(void) addNewSpriteAtPosition:(CGPoint)p;
@@ -70,6 +75,19 @@ enum {
         [self initSprites];
         
         _raycastCallback = new RayCastCallback ();
+        _deltaRemainder = 0;
+        _blades = [[CCArray alloc] initWithCapacity: 3];
+        CCTexture2D *texture = [[CCTextureCache sharedTextureCache] addImage: @"streak.png"];
+        
+        for (int i = 0; i < 3; ++i)
+        {
+            CCBlade *blade = [CCBlade bladeWithMaximumPoint: 50];
+            blade.autoDim = NO;
+            blade.texture = texture;
+            
+            [self addChild: blade z: 2];
+            [_blades addObject: blade];
+        }
 		
 		[self scheduleUpdate];
 	}
@@ -542,6 +560,15 @@ int comparator (const void *a, const void *b)
 	world->Step(dt, velocityIterations, positionIterations);
     
     [self checkAndSliceObjects];
+    
+    if ([_blade.path count] > 3)
+    {
+        _deltaRemainder += dt * 60 * 1.2;
+        
+        int pop = (int) roundf (_deltaRemainder);
+        _deltaRemainder -= pop;
+        [_blade pop: pop];
+    }
 }
 
 - (void) ccTouchesBegan: (NSSet *) touches withEvent: (UIEvent *) event
@@ -552,6 +579,17 @@ int comparator (const void *a, const void *b)
         location = [[CCDirector sharedDirector] convertToGL: location];
         _startPoint = location;
         _endPoint = location;
+        
+        CCBlade *blade;
+        CCARRAY_FOREACH (_blades, blade)
+        {
+            if (blade.path.count == 0)
+            {
+                _blade = blade;
+                [_blade push: location];
+                break;
+            }
+        }
     }
 }
 
@@ -562,6 +600,8 @@ int comparator (const void *a, const void *b)
         CGPoint location = [touch locationInView: [touch view]];
         location = [[CCDirector sharedDirector] convertToGL: location];
         _endPoint = location;
+        
+        [_blade push: location];
     }
     
     if (ccpLengthSQ (ccpSub (_startPoint, _endPoint)) > 25)
@@ -588,6 +628,7 @@ int comparator (const void *a, const void *b)
 	}
     
     [self clearSlices];
+    [_blade dim: YES];
 }
 
 #pragma mark GameKit delegate

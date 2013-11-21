@@ -189,6 +189,10 @@
 		AB2C1D17183A8B540053113A /* PRRatcliffTriangulator.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB2C1D12183A8B540053113A /* PRRatcliffTriangulator.mm */; };
 		AB2C1D18183A8B540053113A /* triangulate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB2C1D14183A8B540053113A /* triangulate.cpp */; };
 		AB2C1D1E183A95F80053113A /* PolygonSprite.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB2C1D1D183A95F80053113A /* PolygonSprite.mm */; };
+		AB99A063183EC4EC00943560 /* CCBlade.mm in Sources */ = {isa = PBXBuildFile; fileRef = AB99A060183EC4EC00943560 /* CCBlade.mm */; };
+		AB99A064183EC4EC00943560 /* TouchTrailLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = AB99A062183EC4EC00943560 /* TouchTrailLayer.m */; };
+		AB99A067183EC83000943560 /* streak-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = AB99A065183EC83000943560 /* streak-hd.png */; };
+		AB99A068183EC83000943560 /* streak.png in Resources */ = {isa = PBXBuildFile; fileRef = AB99A066183EC83000943560 /* streak.png */; };
 		ABDA4E34183BA7A900C4EBAD /* HiraganaA.mm in Sources */ = {isa = PBXBuildFile; fileRef = ABDA4E33183BA7A900C4EBAD /* HiraganaA.mm */; };
 		ABDA4E47183BDDAD00C4EBAD /* hiragana-a-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDA4E38183BDDAD00C4EBAD /* hiragana-a-ipadhd.png */; };
 		ABDA4E48183BDDAD00C4EBAD /* hiragana-a-iphonehd.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDA4E39183BDDAD00C4EBAD /* hiragana-a-iphonehd.png */; };
@@ -592,6 +596,12 @@
 		AB2C1D15183A8B540053113A /* triangulate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = triangulate.h; sourceTree = "<group>"; };
 		AB2C1D1C183A95F80053113A /* PolygonSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PolygonSprite.h; sourceTree = "<group>"; };
 		AB2C1D1D183A95F80053113A /* PolygonSprite.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PolygonSprite.mm; sourceTree = "<group>"; };
+		AB99A05F183EC4EC00943560 /* CCBlade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBlade.h; sourceTree = "<group>"; };
+		AB99A060183EC4EC00943560 /* CCBlade.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CCBlade.mm; sourceTree = "<group>"; };
+		AB99A061183EC4EC00943560 /* TouchTrailLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchTrailLayer.h; sourceTree = "<group>"; };
+		AB99A062183EC4EC00943560 /* TouchTrailLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchTrailLayer.m; sourceTree = "<group>"; };
+		AB99A065183EC83000943560 /* streak-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "streak-hd.png"; path = "Resources/streak-hd.png"; sourceTree = "<group>"; };
+		AB99A066183EC83000943560 /* streak.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = streak.png; path = Resources/streak.png; sourceTree = "<group>"; };
 		ABDA4E32183BA7A900C4EBAD /* HiraganaA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HiraganaA.h; sourceTree = "<group>"; };
 		ABDA4E33183BA7A900C4EBAD /* HiraganaA.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HiraganaA.mm; sourceTree = "<group>"; };
 		ABDA4E38183BDDAD00C4EBAD /* hiragana-a-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hiragana-a-ipadhd.png"; sourceTree = "<group>"; };
@@ -691,6 +701,8 @@
 		AB2C1AD8183A80E40053113A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AB99A065183EC83000943560 /* streak-hd.png */,
+				AB99A066183EC83000943560 /* streak.png */,
 				ABDA4E37183BDDAD00C4EBAD /* Sprites */,
 				AB2C1AD9183A80E40053113A /* Default.png */,
 				AB2C1ADB183A80E40053113A /* Default@2x.png */,
@@ -712,6 +724,7 @@
 		AB2C1AF0183A80E40053113A /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				AB99A05E183EC4EC00943560 /* CCBlade */,
 				AB2C1D0E183A8B540053113A /* PRKit */,
 				AB2C1C1B183A80E60053113A /* LICENSE_cocos2d.txt */,
 				AB2C1C31183A80E70053113A /* LICENSE_CocosDenshion.txt */,
@@ -1267,6 +1280,18 @@
 			path = Layers;
 			sourceTree = "<group>";
 		};
+		AB99A05E183EC4EC00943560 /* CCBlade */ = {
+			isa = PBXGroup;
+			children = (
+				AB99A05F183EC4EC00943560 /* CCBlade.h */,
+				AB99A060183EC4EC00943560 /* CCBlade.mm */,
+				AB99A061183EC4EC00943560 /* TouchTrailLayer.h */,
+				AB99A062183EC4EC00943560 /* TouchTrailLayer.m */,
+			);
+			name = CCBlade;
+			path = libs/CCBlade;
+			sourceTree = "<group>";
+		};
 		ABDA4E37183BDDAD00C4EBAD /* Sprites */ = {
 			isa = PBXGroup;
 			children = (
@@ -1364,6 +1389,7 @@
 				ABDA4E54183BDDAD00C4EBAD /* hiragana-u-iphonehd.png in Resources */,
 				AB2C1AE4183A80E40053113A /* Icon-Small-50.png in Resources */,
 				ABDA4E4F183BDDAD00C4EBAD /* hiragana-i.png in Resources */,
+				AB99A068183EC83000943560 /* streak.png in Resources */,
 				AB2C1AEF183A80E40053113A /* iTunesArtwork in Resources */,
 				ABDA4E48183BDDAD00C4EBAD /* hiragana-a-iphonehd.png in Resources */,
 				ABDA4E52183BDDAD00C4EBAD /* hiragana-o.png in Resources */,
@@ -1376,6 +1402,7 @@
 				ABDA4E4B183BDDAD00C4EBAD /* hiragana-e-iphonehd.png in Resources */,
 				AB2C1AE8183A80E40053113A /* Icon-Small@2x.png in Resources */,
 				ABDA4E4D183BDDAD00C4EBAD /* hiragana-i-ipadhd.png in Resources */,
+				AB99A067183EC83000943560 /* streak-hd.png in Resources */,
 				AB2C1AE0183A80E40053113A /* Default-Landscape~ipad.png in Resources */,
 				AB2C1ADE183A80E40053113A /* Default-568h@2x.png in Resources */,
 				AB2C1AEC183A80E40053113A /* Icon@2x.png in Resources */,
@@ -1475,6 +1502,7 @@
 				AB2C1C54183A80E70053113A /* neon_matrix_impl.c in Sources */,
 				AB2C1B84183A80E50053113A /* CCScene.m in Sources */,
 				AB2C1CED183A80E80053113A /* b2WeldJoint.cpp in Sources */,
+				AB99A063183EC4EC00943560 /* CCBlade.mm in Sources */,
 				AB2C1B03183A80E40053113A /* CCActionGrid3D.m in Sources */,
 				AB2C1C4C183A80E70053113A /* mat4stack.c in Sources */,
 				AB2C1C71183A80E70053113A /* b2CollidePolygon.cpp in Sources */,
@@ -1524,6 +1552,7 @@
 				AB2C1C9E183A80E70053113A /* b2Timer.cpp in Sources */,
 				AB2C1C4E183A80E70053113A /* matrix.c in Sources */,
 				AB2C1CBF183A80E70053113A /* b2Contact.cpp in Sources */,
+				AB99A064183EC4EC00943560 /* TouchTrailLayer.m in Sources */,
 				AB2C1B34183A80E50053113A /* CCDrawingPrimitives.m in Sources */,
 				AB2C1B9C183A80E60053113A /* ccShaders.m in Sources */,
 				AB2C1D1E183A95F80053113A /* PolygonSprite.mm in Sources */,
