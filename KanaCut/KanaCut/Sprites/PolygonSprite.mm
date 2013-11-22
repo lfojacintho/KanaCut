@@ -57,6 +57,8 @@
         self.anchorPoint = ccp (_centroid.x * PTM_RATIO / texture.contentSize.width,
                                 _centroid.y * PTM_RATIO / texture.contentSize.height);
         
+        _state = kPolygonStateIdle;
+        
         _sliceEntered = NO;
         _sliceExited = NO;
         _entryPoint.SetZero ();
@@ -93,6 +95,7 @@
     fixtureDef.restitution = restitution;
     fixtureDef.filter.categoryBits = 0;
     fixtureDef.filter.maskBits = 0;
+    fixtureDef.isSensor = YES;
     
     b2PolygonShape shape;
     shape.Set (vertices, count);

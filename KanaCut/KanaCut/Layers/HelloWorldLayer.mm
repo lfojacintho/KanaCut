@@ -13,6 +13,10 @@
 
 #import "PolygonSprite.h"
 #import "HiraganaA.h"
+#import "HiraganaI.h"
+#import "HiraganaU.h"
+#import "HiraganaE.h"
+#import "HiraganaO.h"
 
 
 enum {
@@ -31,6 +35,11 @@ enum {
     
     CCBlade *_blade;
     float _deltaRemainder;
+    
+    double _nextTossTime;
+    double _tossInterval;
+    int _queuedForToss;
+    TossType _currentTossType;
 }
 
 @property (nonatomic, strong) CCArray *cache;
@@ -70,7 +79,7 @@ enum {
 		self.accelerometerEnabled = YES;
 		CGSize s = [CCDirector sharedDirector].winSize;
 		
-		// init physics
+        [self initBackground];
 		[self initPhysics];
         [self initSprites];
         
@@ -88,6 +97,9 @@ enum {
             [self addChild: blade z: 2];
             [_blades addObject: blade];
         }
+        
+        _nextTossTime = CACurrentMediaTime () + 1;
+        _queuedForToss = 0;
 		
 		[self scheduleUpdate];
 	}
@@ -158,13 +170,21 @@ enum {
 	[self addChild: menu z:-1];	
 }
 
+- (void) initBackground
+{
+    CGSize screen = [[CCDirector sharedDirector] winSize];
+    CCSprite *background = [CCSprite spriteWithFile: @"bg.png"];
+    background.position = ccp (screen.width / 2, screen.height / 2);
+    [self addChild: background z: 0];
+}
+
 -(void) initPhysics
 {
 	
 	CGSize s = [[CCDirector sharedDirector] winSize];
 	
 	b2Vec2 gravity;
-	gravity.Set(0.0f, -10.0f);
+	gravity.Set(0.0f, -4.25f);
 	world = new b2World(gravity);
 	
 	
@@ -195,34 +215,57 @@ enum {
 	b2Body* groundBody = world->CreateBody(&groundBodyDef);
 	
 	// Define the ground box shape.
-	b2EdgeShape groundBox;		
-	
-	// bottom
-	
-	groundBox.Set(b2Vec2(0,0), b2Vec2(s.width/PTM_RATIO,0));
-	groundBody->CreateFixture(&groundBox,0);
-	
-	// top
-	groundBox.Set(b2Vec2(0,s.height/PTM_RATIO), b2Vec2(s.width/PTM_RATIO,s.height/PTM_RATIO));
-	groundBody->CreateFixture(&groundBox,0);
-	
-	// left
-	groundBox.Set(b2Vec2(0,s.height/PTM_RATIO), b2Vec2(0,0));
-	groundBody->CreateFixture(&groundBox,0);
-	
-	// right
-	groundBox.Set(b2Vec2(s.width/PTM_RATIO,s.height/PTM_RATIO), b2Vec2(s.width/PTM_RATIO,0));
-	groundBody->CreateFixture(&groundBox,0);
+	b2EdgeShape groundBox;
 }
 
 - (void) initSprites
 {
-    _cache = [[CCArray alloc] initWithCapacity: 53];
+    _cache = [[CCArray alloc] initWithCapacity: 50];
     
-    PolygonSprite *sprite = [[HiraganaA alloc] initWithWorld: world];
-    [self addChild: sprite z: 1];
-    [sprite activateCollisions];
-    [_cache addObject: sprite];
+    for (int i = 0; i < 10; ++i)
+    {
+        PolygonSprite *sprite = [[HiraganaA alloc] initWithWorld: world];
+        sprite.position = ccp (-64 * (i+1), -64);
+        [self addChild: sprite z: 1];
+        [sprite activateCollisions];
+        [_cache addObject: sprite];
+    }
+    
+    for (int i = 0; i < 10; ++i)
+    {
+        PolygonSprite *sprite = [[HiraganaI alloc] initWithWorld: world];
+        sprite.position = ccp (-64 * (i+1), -64);
+        [self addChild: sprite z: 1];
+        [sprite activateCollisions];
+        [_cache addObject: sprite];
+    }
+    
+    for (int i = 0; i < 10; ++i)
+    {
+        PolygonSprite *sprite = [[HiraganaU alloc] initWithWorld: world];
+        sprite.position = ccp (-64 * (i+1), -64);
+        [self addChild: sprite z: 1];
+        [sprite activateCollisions];
+        [_cache addObject: sprite];
+    }
+    
+    for (int i = 0; i < 10; ++i)
+    {
+        PolygonSprite *sprite = [[HiraganaE alloc] initWithWorld: world];
+        sprite.position = ccp (-64 * (i+1), -64);
+        [self addChild: sprite z: 1];
+        [sprite activateCollisions];
+        [_cache addObject: sprite];
+    }
+    
+    for (int i = 0; i < 10; ++i)
+    {
+        PolygonSprite *sprite = [[HiraganaO alloc] initWithWorld: world];
+        sprite.position = ccp (-64 * (i+1), -64);
+        [self addChild: sprite z: 1];
+        [sprite activateCollisions];
+        [_cache addObject: sprite];
+    }
 }
 
 - (void) checkAndSliceObjects
@@ -256,6 +299,52 @@ enum {
             PolygonSprite *sprite = (PolygonSprite *) b->GetUserData ();
             sprite.sliceEntered = NO;
             sprite.sliceExited = NO;
+        }
+    }
+}
+
+- (void) cleanSprites
+{
+    PolygonSprite *sprite;
+    
+    CCARRAY_FOREACH (_cache, sprite)
+    {
+        if (sprite.state == kPolygonStateTossed)
+        {
+            CGPoint spritePosition = ccp (sprite.body->GetPosition ().x * PTM_RATIO,
+                                          sprite.body->GetPosition ().y * PTM_RATIO);
+            float yVelocity = sprite.body->GetLinearVelocity ().y;
+            
+            if (spritePosition.y < -64 && yVelocity < 0)
+            {
+                sprite.state = kPolygonStateIdle;
+                sprite.sliceEntered = NO;
+                sprite.sliceExited = NO;
+                sprite.entryPoint.SetZero ();
+                sprite.exitPoint.SetZero ();
+                sprite.position = ccp (-64, -64);
+                sprite.body->SetLinearVelocity (b2Vec2 (0.f, 0.f));
+                sprite.body->SetAngularVelocity (0.f);
+                [sprite deactivateCollisions];
+            }
+        }
+    }
+    
+    CGSize screen = [[CCDirector sharedDirector] winSize];
+    for (b2Body *b = world->GetBodyList (); b; b = b->GetNext ())
+    {
+        if (b->GetUserData () != NULL)
+        {
+            PolygonSprite *sprite = (PolygonSprite *) b->GetUserData ();
+            CGPoint position = ccp (b->GetPosition ().x * PTM_RATIO, b->GetPosition ().y * PTM_RATIO);
+            if (position.x < -64 || position.x > screen.width || position.y < -64)
+            {
+                if (!sprite.original)
+                {
+                    world->DestroyBody (sprite.body);
+                    [self removeChild: sprite cleanup: YES];
+                }
+            }
         }
     }
 }
@@ -319,6 +408,14 @@ enum {
     
     if (sprite1VerticesAreAcceptable && sprite2VerticesAreAcceptable)
     {
+        b2Vec2 worldEntry = sprite.body->GetWorldPoint (sprite.entryPoint);
+        b2Vec2 worldExit = sprite.body->GetWorldPoint (sprite.exitPoint);
+        float angle = ccpToAngle (ccpSub (ccp (worldExit.x, worldExit.y), ccp (worldEntry.x, worldExit.y)));
+        CGPoint vector1 = ccpForAngle (angle + 1.570796);
+        CGPoint vector2 = ccpForAngle (angle - 1.570796);
+        float midX = midpoint (worldEntry.x, worldExit.x);
+        float midY = midpoint (worldEntry.y, worldExit.y);
+        
         b2Body *body1 = [self createBodyWithPosition: sprite.body->GetPosition ()
                                             rotation: sprite.body->GetAngle ()
                                             vertices: sprite1VerticesSorted
@@ -328,6 +425,9 @@ enum {
                                          restitution: originalFixture->GetRestitution ()];
         newSprite1 = [PolygonSprite spriteWithTexture: sprite.texture body: body1 original: NO];
         [self addChild: newSprite1 z:1];
+        newSprite1.body->ApplyLinearImpulse (b2Vec2 (2 * body1->GetMass () * vector1.x,
+                                                     2 * body1->GetMass () * vector1.y),
+                                             b2Vec2 (midX, midY));
         
         b2Body *body2 = [self createBodyWithPosition: sprite.body->GetPosition ()
                                             rotation: sprite.body->GetAngle ()
@@ -338,9 +438,13 @@ enum {
                                          restitution: originalFixture->GetRestitution()];
         newSprite2 = [PolygonSprite spriteWithTexture: sprite.texture body: body2 original: NO];
         [self addChild: newSprite2 z: 1];
+        newSprite2.body->ApplyLinearImpulse (b2Vec2 (2 * body2->GetMass () * vector2.x,
+                                                     2 * body2->GetMass () * vector2.y),
+                                             b2Vec2 (midX, midY));
         
         if (sprite.original)
         {
+            sprite.state = kPolygonStateIdle;
             [sprite deactivateCollisions];
             sprite.position = ccp (-256, -256);
             sprite.sliceEntered = NO;
@@ -381,6 +485,99 @@ int comparator (const void *a, const void *b)
     }
     
     return 0;
+}
+
+- (void) tossSprite: (PolygonSprite *) sprite
+{
+    CGSize screen = [[CCDirector sharedDirector] winSize];
+    CGPoint randomPosition = ccp (frandom_range (100, screen.width - 164), -64);
+    float randomAngularVelocity = frandom_range (-1, 1);
+    
+    float xModifier = 50 * (randomPosition.x - 100) / (screen.width - 264);
+    float min = -25.f - xModifier;
+    float max = 75.f - xModifier;
+    
+    float randomXVelocity = frandom_range (min, max);
+    float randomYVelocity = frandom_range (250, 300);
+    
+    sprite.state = kPolygonStateTossed;
+    sprite.position = randomPosition;
+    [sprite activateCollisions];
+    sprite.body->SetLinearVelocity (b2Vec2 (randomXVelocity / PTM_RATIO, randomYVelocity / PTM_RATIO));
+    sprite.body->SetAngularVelocity (randomAngularVelocity);
+}
+
+- (void) spriteLoop
+{
+    double curTime = CACurrentMediaTime ();
+    
+    if (curTime > _nextTossTime)
+    {
+        PolygonSprite *sprite;
+        
+        int random = random_range (0, 4);
+        PolygonType type = (PolygonType) random;
+        if (_currentTossType == kTossTypeConsecutive && _queuedForToss > 0)
+        {
+            CCARRAY_FOREACH (_cache, sprite)
+            {
+                if (sprite.state == kPolygonStateIdle && sprite.type == type)
+                {
+                    [self tossSprite: sprite];
+                    _queuedForToss--;
+                    break;
+                }
+            }
+        }
+        else
+        {
+            _queuedForToss = random_range (3, 8);
+            int tossType = random_range (0, 1);
+            
+            _currentTossType = (TossType) tossType;
+            if (_currentTossType == kTossTypeSimultaneous)
+            {
+                CCARRAY_FOREACH (_cache, sprite)
+                {
+                    if (sprite.state == kPolygonStateIdle && sprite.type == type)
+                    {
+                        [self tossSprite: sprite];
+                        _queuedForToss--;
+                        random = random_range (0, 4);
+                        type = (PolygonType) random;
+                        
+                        if (_queuedForToss == 0)
+                        {
+                            break;
+                        }
+                    }
+                }
+            }
+            else if (_currentTossType == kTossTypeConsecutive)
+            {
+                CCARRAY_FOREACH (_cache, sprite)
+                {
+                    if (sprite.state == kPolygonStateIdle && sprite.type == type)
+                    {
+                        [self tossSprite: sprite];
+                        _queuedForToss--;
+                        break;
+                    }
+                }
+            }
+        }
+        
+        if (_queuedForToss == 0)
+        {
+            _tossInterval = frandom_range (2, 3);
+            _nextTossTime = curTime + _tossInterval;
+        }
+        else
+        {
+            _tossInterval = frandom_range (0.3, 0.8);
+            _nextTossTime = curTime + _tossInterval;
+        }
+    }
 }
 
 - (b2Body *) createBodyWithPosition: (b2Vec2) position rotation: (float) rotation vertices: (b2Vec2 *) vertices vertexCount: (int32) count density: (float) density friction: (float) friction restitution: (float) restitution
@@ -560,6 +757,8 @@ int comparator (const void *a, const void *b)
 	world->Step(dt, velocityIterations, positionIterations);
     
     [self checkAndSliceObjects];
+    [self cleanSprites];
+    [self spriteLoop];
     
     if ([_blade.path count] > 3)
     {

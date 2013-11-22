@@ -193,21 +193,35 @@
 		AB99A064183EC4EC00943560 /* TouchTrailLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = AB99A062183EC4EC00943560 /* TouchTrailLayer.m */; };
 		AB99A067183EC83000943560 /* streak-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = AB99A065183EC83000943560 /* streak-hd.png */; };
 		AB99A068183EC83000943560 /* streak.png in Resources */ = {isa = PBXBuildFile; fileRef = AB99A066183EC83000943560 /* streak.png */; };
+		ABB4A9FC183F685B00AA7CE4 /* HiraganaE.mm in Sources */ = {isa = PBXBuildFile; fileRef = ABB4A9FB183F685B00AA7CE4 /* HiraganaE.mm */; };
+		ABB4A9FF183F6B8700AA7CE4 /* HiraganaO.mm in Sources */ = {isa = PBXBuildFile; fileRef = ABB4A9FE183F6B8700AA7CE4 /* HiraganaO.mm */; };
+		ABB4AA02183F6C2400AA7CE4 /* HiraganaU.mm in Sources */ = {isa = PBXBuildFile; fileRef = ABB4AA01183F6C2400AA7CE4 /* HiraganaU.mm */; };
+		ABB4AA05183F6D2400AA7CE4 /* HiraganaI.mm in Sources */ = {isa = PBXBuildFile; fileRef = ABB4AA04183F6D2400AA7CE4 /* HiraganaI.mm */; };
+		ABB4AA0B183F757000AA7CE4 /* bg-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB4AA06183F757000AA7CE4 /* bg-ipad.png */; };
+		ABB4AA0C183F757000AA7CE4 /* bg-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB4AA07183F757000AA7CE4 /* bg-ipadhd.png */; };
+		ABB4AA13183F790400AA7CE4 /* bg-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB4AA10183F790400AA7CE4 /* bg-hd.png */; };
+		ABB4AA14183F790400AA7CE4 /* bg-iphone5hd.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB4AA11183F790400AA7CE4 /* bg-iphone5hd.png */; };
+		ABB4AA15183F790400AA7CE4 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB4AA12183F790400AA7CE4 /* bg.png */; };
+		ABB4AA20183F791D00AA7CE4 /* hiragana-a-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB4AA16183F791D00AA7CE4 /* hiragana-a-hd.png */; };
+		ABB4AA21183F791D00AA7CE4 /* hiragana-a-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB4AA17183F791D00AA7CE4 /* hiragana-a-ipad.png */; };
+		ABB4AA22183F791D00AA7CE4 /* hiragana-e-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB4AA18183F791D00AA7CE4 /* hiragana-e-hd.png */; };
+		ABB4AA23183F791D00AA7CE4 /* hiragana-e-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB4AA19183F791D00AA7CE4 /* hiragana-e-ipad.png */; };
+		ABB4AA24183F791D00AA7CE4 /* hiragana-i-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB4AA1A183F791D00AA7CE4 /* hiragana-i-hd.png */; };
+		ABB4AA25183F791D00AA7CE4 /* hiragana-i-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB4AA1B183F791D00AA7CE4 /* hiragana-i-ipad.png */; };
+		ABB4AA26183F791D00AA7CE4 /* hiragana-o-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB4AA1C183F791D00AA7CE4 /* hiragana-o-hd.png */; };
+		ABB4AA27183F791D00AA7CE4 /* hiragana-o-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB4AA1D183F791D00AA7CE4 /* hiragana-o-ipad.png */; };
+		ABB4AA28183F791D00AA7CE4 /* hiragana-u-hd.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB4AA1E183F791D00AA7CE4 /* hiragana-u-hd.png */; };
+		ABB4AA29183F791D00AA7CE4 /* hiragana-u-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = ABB4AA1F183F791D00AA7CE4 /* hiragana-u-ipad.png */; };
 		ABDA4E34183BA7A900C4EBAD /* HiraganaA.mm in Sources */ = {isa = PBXBuildFile; fileRef = ABDA4E33183BA7A900C4EBAD /* HiraganaA.mm */; };
 		ABDA4E47183BDDAD00C4EBAD /* hiragana-a-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDA4E38183BDDAD00C4EBAD /* hiragana-a-ipadhd.png */; };
-		ABDA4E48183BDDAD00C4EBAD /* hiragana-a-iphonehd.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDA4E39183BDDAD00C4EBAD /* hiragana-a-iphonehd.png */; };
 		ABDA4E49183BDDAD00C4EBAD /* hiragana-a.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDA4E3A183BDDAD00C4EBAD /* hiragana-a.png */; };
 		ABDA4E4A183BDDAD00C4EBAD /* hiragana-e-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDA4E3B183BDDAD00C4EBAD /* hiragana-e-ipadhd.png */; };
-		ABDA4E4B183BDDAD00C4EBAD /* hiragana-e-iphonehd.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDA4E3C183BDDAD00C4EBAD /* hiragana-e-iphonehd.png */; };
 		ABDA4E4C183BDDAD00C4EBAD /* hiragana-e.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDA4E3D183BDDAD00C4EBAD /* hiragana-e.png */; };
 		ABDA4E4D183BDDAD00C4EBAD /* hiragana-i-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDA4E3E183BDDAD00C4EBAD /* hiragana-i-ipadhd.png */; };
-		ABDA4E4E183BDDAD00C4EBAD /* hiragana-i-iphonehd.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDA4E3F183BDDAD00C4EBAD /* hiragana-i-iphonehd.png */; };
 		ABDA4E4F183BDDAD00C4EBAD /* hiragana-i.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDA4E40183BDDAD00C4EBAD /* hiragana-i.png */; };
 		ABDA4E50183BDDAD00C4EBAD /* hiragana-o-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDA4E41183BDDAD00C4EBAD /* hiragana-o-ipadhd.png */; };
-		ABDA4E51183BDDAD00C4EBAD /* hiragana-o-iphonehd.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDA4E42183BDDAD00C4EBAD /* hiragana-o-iphonehd.png */; };
 		ABDA4E52183BDDAD00C4EBAD /* hiragana-o.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDA4E43183BDDAD00C4EBAD /* hiragana-o.png */; };
 		ABDA4E53183BDDAD00C4EBAD /* hiragana-u-ipadhd.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDA4E44183BDDAD00C4EBAD /* hiragana-u-ipadhd.png */; };
-		ABDA4E54183BDDAD00C4EBAD /* hiragana-u-iphonehd.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDA4E45183BDDAD00C4EBAD /* hiragana-u-iphonehd.png */; };
 		ABDA4E55183BDDAD00C4EBAD /* hiragana-u.png in Resources */ = {isa = PBXBuildFile; fileRef = ABDA4E46183BDDAD00C4EBAD /* hiragana-u.png */; };
 		ABDA4E5B183BEA8A00C4EBAD /* GLES-Render.mm in Sources */ = {isa = PBXBuildFile; fileRef = ABDA4E59183BEA8A00C4EBAD /* GLES-Render.mm */; };
 		ABDA4E60183BEAA400C4EBAD /* HelloWorldLayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = ABDA4E5D183BEAA400C4EBAD /* HelloWorldLayer.mm */; };
@@ -602,22 +616,40 @@
 		AB99A062183EC4EC00943560 /* TouchTrailLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchTrailLayer.m; sourceTree = "<group>"; };
 		AB99A065183EC83000943560 /* streak-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "streak-hd.png"; path = "Resources/streak-hd.png"; sourceTree = "<group>"; };
 		AB99A066183EC83000943560 /* streak.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = streak.png; path = Resources/streak.png; sourceTree = "<group>"; };
+		ABB4A9FA183F685B00AA7CE4 /* HiraganaE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HiraganaE.h; sourceTree = "<group>"; };
+		ABB4A9FB183F685B00AA7CE4 /* HiraganaE.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HiraganaE.mm; sourceTree = "<group>"; };
+		ABB4A9FD183F6B8700AA7CE4 /* HiraganaO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HiraganaO.h; sourceTree = "<group>"; };
+		ABB4A9FE183F6B8700AA7CE4 /* HiraganaO.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HiraganaO.mm; sourceTree = "<group>"; };
+		ABB4AA00183F6C2400AA7CE4 /* HiraganaU.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HiraganaU.h; sourceTree = "<group>"; };
+		ABB4AA01183F6C2400AA7CE4 /* HiraganaU.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HiraganaU.mm; sourceTree = "<group>"; };
+		ABB4AA03183F6D2400AA7CE4 /* HiraganaI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HiraganaI.h; sourceTree = "<group>"; };
+		ABB4AA04183F6D2400AA7CE4 /* HiraganaI.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HiraganaI.mm; sourceTree = "<group>"; };
+		ABB4AA06183F757000AA7CE4 /* bg-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg-ipad.png"; path = "Resources/bg-ipad.png"; sourceTree = "<group>"; };
+		ABB4AA07183F757000AA7CE4 /* bg-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg-ipadhd.png"; path = "Resources/bg-ipadhd.png"; sourceTree = "<group>"; };
+		ABB4AA10183F790400AA7CE4 /* bg-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg-hd.png"; path = "Resources/bg-hd.png"; sourceTree = "<group>"; };
+		ABB4AA11183F790400AA7CE4 /* bg-iphone5hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg-iphone5hd.png"; path = "Resources/bg-iphone5hd.png"; sourceTree = "<group>"; };
+		ABB4AA12183F790400AA7CE4 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg.png; path = Resources/bg.png; sourceTree = "<group>"; };
+		ABB4AA16183F791D00AA7CE4 /* hiragana-a-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hiragana-a-hd.png"; sourceTree = "<group>"; };
+		ABB4AA17183F791D00AA7CE4 /* hiragana-a-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hiragana-a-ipad.png"; sourceTree = "<group>"; };
+		ABB4AA18183F791D00AA7CE4 /* hiragana-e-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hiragana-e-hd.png"; sourceTree = "<group>"; };
+		ABB4AA19183F791D00AA7CE4 /* hiragana-e-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hiragana-e-ipad.png"; sourceTree = "<group>"; };
+		ABB4AA1A183F791D00AA7CE4 /* hiragana-i-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hiragana-i-hd.png"; sourceTree = "<group>"; };
+		ABB4AA1B183F791D00AA7CE4 /* hiragana-i-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hiragana-i-ipad.png"; sourceTree = "<group>"; };
+		ABB4AA1C183F791D00AA7CE4 /* hiragana-o-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hiragana-o-hd.png"; sourceTree = "<group>"; };
+		ABB4AA1D183F791D00AA7CE4 /* hiragana-o-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hiragana-o-ipad.png"; sourceTree = "<group>"; };
+		ABB4AA1E183F791D00AA7CE4 /* hiragana-u-hd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hiragana-u-hd.png"; sourceTree = "<group>"; };
+		ABB4AA1F183F791D00AA7CE4 /* hiragana-u-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hiragana-u-ipad.png"; sourceTree = "<group>"; };
 		ABDA4E32183BA7A900C4EBAD /* HiraganaA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HiraganaA.h; sourceTree = "<group>"; };
 		ABDA4E33183BA7A900C4EBAD /* HiraganaA.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HiraganaA.mm; sourceTree = "<group>"; };
 		ABDA4E38183BDDAD00C4EBAD /* hiragana-a-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hiragana-a-ipadhd.png"; sourceTree = "<group>"; };
-		ABDA4E39183BDDAD00C4EBAD /* hiragana-a-iphonehd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hiragana-a-iphonehd.png"; sourceTree = "<group>"; };
 		ABDA4E3A183BDDAD00C4EBAD /* hiragana-a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hiragana-a.png"; sourceTree = "<group>"; };
 		ABDA4E3B183BDDAD00C4EBAD /* hiragana-e-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hiragana-e-ipadhd.png"; sourceTree = "<group>"; };
-		ABDA4E3C183BDDAD00C4EBAD /* hiragana-e-iphonehd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hiragana-e-iphonehd.png"; sourceTree = "<group>"; };
 		ABDA4E3D183BDDAD00C4EBAD /* hiragana-e.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hiragana-e.png"; sourceTree = "<group>"; };
 		ABDA4E3E183BDDAD00C4EBAD /* hiragana-i-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hiragana-i-ipadhd.png"; sourceTree = "<group>"; };
-		ABDA4E3F183BDDAD00C4EBAD /* hiragana-i-iphonehd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hiragana-i-iphonehd.png"; sourceTree = "<group>"; };
 		ABDA4E40183BDDAD00C4EBAD /* hiragana-i.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hiragana-i.png"; sourceTree = "<group>"; };
 		ABDA4E41183BDDAD00C4EBAD /* hiragana-o-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hiragana-o-ipadhd.png"; sourceTree = "<group>"; };
-		ABDA4E42183BDDAD00C4EBAD /* hiragana-o-iphonehd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hiragana-o-iphonehd.png"; sourceTree = "<group>"; };
 		ABDA4E43183BDDAD00C4EBAD /* hiragana-o.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hiragana-o.png"; sourceTree = "<group>"; };
 		ABDA4E44183BDDAD00C4EBAD /* hiragana-u-ipadhd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hiragana-u-ipadhd.png"; sourceTree = "<group>"; };
-		ABDA4E45183BDDAD00C4EBAD /* hiragana-u-iphonehd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hiragana-u-iphonehd.png"; sourceTree = "<group>"; };
 		ABDA4E46183BDDAD00C4EBAD /* hiragana-u.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hiragana-u.png"; sourceTree = "<group>"; };
 		ABDA4E58183BEA8A00C4EBAD /* GLES-Render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLES-Render.h"; sourceTree = "<group>"; };
 		ABDA4E59183BEA8A00C4EBAD /* GLES-Render.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "GLES-Render.mm"; sourceTree = "<group>"; };
@@ -701,6 +733,11 @@
 		AB2C1AD8183A80E40053113A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				ABB4AA10183F790400AA7CE4 /* bg-hd.png */,
+				ABB4AA11183F790400AA7CE4 /* bg-iphone5hd.png */,
+				ABB4AA12183F790400AA7CE4 /* bg.png */,
+				ABB4AA06183F757000AA7CE4 /* bg-ipad.png */,
+				ABB4AA07183F757000AA7CE4 /* bg-ipadhd.png */,
 				AB99A065183EC83000943560 /* streak-hd.png */,
 				AB99A066183EC83000943560 /* streak.png */,
 				ABDA4E37183BDDAD00C4EBAD /* Sprites */,
@@ -1265,6 +1302,14 @@
 				AB2C1D1D183A95F80053113A /* PolygonSprite.mm */,
 				ABDA4E32183BA7A900C4EBAD /* HiraganaA.h */,
 				ABDA4E33183BA7A900C4EBAD /* HiraganaA.mm */,
+				ABB4AA03183F6D2400AA7CE4 /* HiraganaI.h */,
+				ABB4AA04183F6D2400AA7CE4 /* HiraganaI.mm */,
+				ABB4AA00183F6C2400AA7CE4 /* HiraganaU.h */,
+				ABB4AA01183F6C2400AA7CE4 /* HiraganaU.mm */,
+				ABB4A9FA183F685B00AA7CE4 /* HiraganaE.h */,
+				ABB4A9FB183F685B00AA7CE4 /* HiraganaE.mm */,
+				ABB4A9FD183F6B8700AA7CE4 /* HiraganaO.h */,
+				ABB4A9FE183F6B8700AA7CE4 /* HiraganaO.mm */,
 			);
 			path = Sprites;
 			sourceTree = "<group>";
@@ -1295,20 +1340,25 @@
 		ABDA4E37183BDDAD00C4EBAD /* Sprites */ = {
 			isa = PBXGroup;
 			children = (
+				ABB4AA16183F791D00AA7CE4 /* hiragana-a-hd.png */,
+				ABB4AA17183F791D00AA7CE4 /* hiragana-a-ipad.png */,
+				ABB4AA18183F791D00AA7CE4 /* hiragana-e-hd.png */,
+				ABB4AA19183F791D00AA7CE4 /* hiragana-e-ipad.png */,
+				ABB4AA1A183F791D00AA7CE4 /* hiragana-i-hd.png */,
+				ABB4AA1B183F791D00AA7CE4 /* hiragana-i-ipad.png */,
+				ABB4AA1C183F791D00AA7CE4 /* hiragana-o-hd.png */,
+				ABB4AA1D183F791D00AA7CE4 /* hiragana-o-ipad.png */,
+				ABB4AA1E183F791D00AA7CE4 /* hiragana-u-hd.png */,
+				ABB4AA1F183F791D00AA7CE4 /* hiragana-u-ipad.png */,
 				ABDA4E38183BDDAD00C4EBAD /* hiragana-a-ipadhd.png */,
-				ABDA4E39183BDDAD00C4EBAD /* hiragana-a-iphonehd.png */,
 				ABDA4E3A183BDDAD00C4EBAD /* hiragana-a.png */,
 				ABDA4E3B183BDDAD00C4EBAD /* hiragana-e-ipadhd.png */,
-				ABDA4E3C183BDDAD00C4EBAD /* hiragana-e-iphonehd.png */,
 				ABDA4E3D183BDDAD00C4EBAD /* hiragana-e.png */,
 				ABDA4E3E183BDDAD00C4EBAD /* hiragana-i-ipadhd.png */,
-				ABDA4E3F183BDDAD00C4EBAD /* hiragana-i-iphonehd.png */,
 				ABDA4E40183BDDAD00C4EBAD /* hiragana-i.png */,
 				ABDA4E41183BDDAD00C4EBAD /* hiragana-o-ipadhd.png */,
-				ABDA4E42183BDDAD00C4EBAD /* hiragana-o-iphonehd.png */,
 				ABDA4E43183BDDAD00C4EBAD /* hiragana-o.png */,
 				ABDA4E44183BDDAD00C4EBAD /* hiragana-u-ipadhd.png */,
-				ABDA4E45183BDDAD00C4EBAD /* hiragana-u-iphonehd.png */,
 				ABDA4E46183BDDAD00C4EBAD /* hiragana-u.png */,
 			);
 			name = Sprites;
@@ -1376,33 +1426,43 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABB4AA0C183F757000AA7CE4 /* bg-ipadhd.png in Resources */,
 				ABDA4E47183BDDAD00C4EBAD /* hiragana-a-ipadhd.png in Resources */,
+				ABB4AA25183F791D00AA7CE4 /* hiragana-i-ipad.png in Resources */,
 				AB2C1AEA183A80E40053113A /* Icon.png in Resources */,
 				ABDA4E4C183BDDAD00C4EBAD /* hiragana-e.png in Resources */,
 				AB2C1C48183A80E70053113A /* ChangeLog in Resources */,
 				ABDA4E53183BDDAD00C4EBAD /* hiragana-u-ipadhd.png in Resources */,
+				ABB4AA22183F791D00AA7CE4 /* hiragana-e-hd.png in Resources */,
 				AB2C1ADC183A80E40053113A /* Default@2x.png in Resources */,
 				AB2C1AE6183A80E40053113A /* Icon-Small.png in Resources */,
 				AB2C1AE2183A80E40053113A /* Icon-72.png in Resources */,
-				ABDA4E4E183BDDAD00C4EBAD /* hiragana-i-iphonehd.png in Resources */,
 				AB2C1ADA183A80E40053113A /* Default.png in Resources */,
-				ABDA4E54183BDDAD00C4EBAD /* hiragana-u-iphonehd.png in Resources */,
+				ABB4AA27183F791D00AA7CE4 /* hiragana-o-ipad.png in Resources */,
 				AB2C1AE4183A80E40053113A /* Icon-Small-50.png in Resources */,
+				ABB4AA29183F791D00AA7CE4 /* hiragana-u-ipad.png in Resources */,
+				ABB4AA26183F791D00AA7CE4 /* hiragana-o-hd.png in Resources */,
+				ABB4AA20183F791D00AA7CE4 /* hiragana-a-hd.png in Resources */,
 				ABDA4E4F183BDDAD00C4EBAD /* hiragana-i.png in Resources */,
+				ABB4AA28183F791D00AA7CE4 /* hiragana-u-hd.png in Resources */,
+				ABB4AA24183F791D00AA7CE4 /* hiragana-i-hd.png in Resources */,
 				AB99A068183EC83000943560 /* streak.png in Resources */,
 				AB2C1AEF183A80E40053113A /* iTunesArtwork in Resources */,
-				ABDA4E48183BDDAD00C4EBAD /* hiragana-a-iphonehd.png in Resources */,
 				ABDA4E52183BDDAD00C4EBAD /* hiragana-o.png in Resources */,
-				ABDA4E51183BDDAD00C4EBAD /* hiragana-o-iphonehd.png in Resources */,
 				ABDA4E49183BDDAD00C4EBAD /* hiragana-a.png in Resources */,
 				ABDA4E55183BDDAD00C4EBAD /* hiragana-u.png in Resources */,
 				ABDA4E50183BDDAD00C4EBAD /* hiragana-o-ipadhd.png in Resources */,
 				ABDA4E4A183BDDAD00C4EBAD /* hiragana-e-ipadhd.png in Resources */,
 				AB2C1D08183A80E80053113A /* blocks.png in Resources */,
-				ABDA4E4B183BDDAD00C4EBAD /* hiragana-e-iphonehd.png in Resources */,
+				ABB4AA13183F790400AA7CE4 /* bg-hd.png in Resources */,
+				ABB4AA15183F790400AA7CE4 /* bg.png in Resources */,
 				AB2C1AE8183A80E40053113A /* Icon-Small@2x.png in Resources */,
+				ABB4AA14183F790400AA7CE4 /* bg-iphone5hd.png in Resources */,
+				ABB4AA23183F791D00AA7CE4 /* hiragana-e-ipad.png in Resources */,
 				ABDA4E4D183BDDAD00C4EBAD /* hiragana-i-ipadhd.png in Resources */,
+				ABB4AA21183F791D00AA7CE4 /* hiragana-a-ipad.png in Resources */,
 				AB99A067183EC83000943560 /* streak-hd.png in Resources */,
+				ABB4AA0B183F757000AA7CE4 /* bg-ipad.png in Resources */,
 				AB2C1AE0183A80E40053113A /* Default-Landscape~ipad.png in Resources */,
 				AB2C1ADE183A80E40053113A /* Default-568h@2x.png in Resources */,
 				AB2C1AEC183A80E40053113A /* Icon@2x.png in Resources */,
@@ -1454,6 +1514,7 @@
 				AB2C1C9B183A80E70053113A /* b2StackAllocator.cpp in Sources */,
 				AB2C1CE4183A80E80053113A /* b2PulleyJoint.cpp in Sources */,
 				AB2C1AFA183A80E40053113A /* CCActionCatmullRom.m in Sources */,
+				ABB4AA02183F6C2400AA7CE4 /* HiraganaU.mm in Sources */,
 				AB2C1D18183A8B540053113A /* triangulate.cpp in Sources */,
 				AB2C1B71183A80E50053113A /* CCParticleSystem.m in Sources */,
 				AB2C1BC6183A80E60053113A /* CCTransition.m in Sources */,
@@ -1496,6 +1557,7 @@
 				AB2C1BA5183A80E60053113A /* CCSpriteFrame.m in Sources */,
 				AB2C1B12183A80E40053113A /* CCActionProgressTimer.m in Sources */,
 				AB2C1C6D183A80E70053113A /* b2CollideCircle.cpp in Sources */,
+				ABB4A9FC183F685B00AA7CE4 /* HiraganaE.mm in Sources */,
 				AB2C1AF4183A80E40053113A /* CCAction.m in Sources */,
 				AB2C1C2C183A80E70053113A /* CocosDenshion.m in Sources */,
 				AB2C1BB1183A80E60053113A /* CCTextureCache.m in Sources */,
@@ -1535,6 +1597,7 @@
 				AB2C1C23183A80E70053113A /* CDOpenALSupport.m in Sources */,
 				AB2C1C76183A80E70053113A /* b2Distance.cpp in Sources */,
 				AB2C1B06183A80E40053113A /* CCActionInstant.m in Sources */,
+				ABB4AA05183F6D2400AA7CE4 /* HiraganaI.mm in Sources */,
 				AB2C1B27183A80E50053113A /* CCClippingNode.m in Sources */,
 				AB2C1CE1183A80E80053113A /* b2PrismaticJoint.cpp in Sources */,
 				AB2C1C6A183A80E70053113A /* b2BroadPhase.cpp in Sources */,
@@ -1555,6 +1618,7 @@
 				AB99A064183EC4EC00943560 /* TouchTrailLayer.m in Sources */,
 				AB2C1B34183A80E50053113A /* CCDrawingPrimitives.m in Sources */,
 				AB2C1B9C183A80E60053113A /* ccShaders.m in Sources */,
+				ABB4A9FF183F6B8700AA7CE4 /* HiraganaO.mm in Sources */,
 				AB2C1D1E183A95F80053113A /* PolygonSprite.mm in Sources */,
 				AB2C1CB2183A80E70053113A /* b2WorldCallbacks.cpp in Sources */,
 				AB2C1CD2183A80E70053113A /* b2DistanceJoint.cpp in Sources */,

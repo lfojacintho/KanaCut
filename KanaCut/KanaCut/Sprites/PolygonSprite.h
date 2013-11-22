@@ -12,11 +12,29 @@
 
 #define PTM_RATIO   32
 
+typedef enum _PolygonState
+{
+    kPolygonStateIdle = 0,
+    kPolygonStateTossed
+} PolygonState;
+
+typedef enum _PolygonType
+{
+    kPolygonTypeHiraganaA = 0,
+    kPolygonTypeHiraganaI,
+    kPolygonTypeHiraganaU,
+    kPolygonTypeHiraganaE,
+    kPolygonTypeHiraganaO
+} PolygonType;
+
 @interface PolygonSprite : PRFilledPolygon
 
 @property (nonatomic, assign) b2Body *body;
 @property (nonatomic, readwrite) BOOL original;
 @property (nonatomic, readwrite) b2Vec2 centroid;
+
+@property (nonatomic, readwrite) PolygonState state;
+@property (nonatomic, readwrite) PolygonType type;
 
 @property (nonatomic, readwrite) BOOL sliceEntered;
 @property (nonatomic, readwrite) BOOL sliceExited;

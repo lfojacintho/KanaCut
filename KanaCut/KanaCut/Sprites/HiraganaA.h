@@ -9,8 +9,5 @@
 #import "PolygonSprite.h"
 
 @interface HiraganaA : PolygonSprite
-{
-    
-}
 
 @end

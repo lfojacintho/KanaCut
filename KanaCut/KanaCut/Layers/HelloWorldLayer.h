@@ -23,6 +23,18 @@
 #define calculate_determinant_2x2(x1,y1,x2,y2)          x1*y2-y1*x2
 #define calculate_determinant_2x3(x1,y1,x2,y2,x3,y3)    x1*y2+x2*y3+x3*y1-y1*x2-y2*x3-y3*x1
 
+#define frandom                 (float)arc4random()/UINT64_C(0x100000000)
+#define frandom_range(low,high) ((high-low)*frandom)+low
+#define random_range(low,high)  (arc4random()%(high-low+1))+low
+
+#define midpoint(a,b)   (float)(a+b)/2
+
+typedef enum _TossType
+{
+    kTossTypeConsecutive = 0,
+    kTossTypeSimultaneous
+} TossType;
+
 @class PolygonSprite;
 
 // HelloWorldLayer

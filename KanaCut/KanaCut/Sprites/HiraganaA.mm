@@ -40,7 +40,7 @@
     
     if (self)
     {
-        
+        self.type = kPolygonTypeHiraganaA;
     }
     
     return self;
